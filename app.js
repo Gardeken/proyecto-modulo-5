@@ -13,11 +13,11 @@ async function conectarDB() {
         console.log("Error al conectar a la base de datos: " + error)
     }
 }
-conectarDB();
 
 app.use(express.json())
 app.use('/', express.static(path.resolve('views', 'home')))
 app.use('/Login', express.static(path.resolve('views', 'login')))
+app.use('/components', express.static(path.resolve('views', 'components')))
 app.use('/Register', express.static(path.resolve('views', 'registro')))
 
 module.exports = app
