@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const mongoose = require("mongoose");
+const userRouter = require("./controllers/usuarios");
 
 async function conectarDB() {
   try {
@@ -20,5 +21,10 @@ app.use("/", express.static(path.resolve("views", "home")));
 app.use("/Login", express.static(path.resolve("views", "login")));
 app.use("/components", express.static(path.resolve("views", "components")));
 app.use("/Register", express.static(path.resolve("views", "registro")));
+
+// rutas back
+
+app.use("/controllers", express.static(path.resolve("controllers")));
+app.use("/api/users", userRouter);
 
 module.exports = app;
