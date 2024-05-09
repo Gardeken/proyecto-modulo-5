@@ -17,12 +17,13 @@
       <div
         class="bg-blue-700 h-auto py-6 md:p-0 md:h-3/5 w-2/4 rounded grid place-items-center"
       >
-        <form class="w-5/6 h-auto flex flex-col gap-5">
+        <form id="formulario" class="w-5/6 h-auto flex flex-col gap-5">
           <div class="flex md:flex-row flex-col w-full gap-7">
             <div class="flex flex-col gap-4">
               <label class="text-white" for="usuario">Usuario</label>
               <input
-                class="bg-blue-800/50 rounded px-3 py-1 w-full"
+              placeholder="Pedro Centeno"
+                class="bg-blue-800/50 border-2 outline-none rounded px-3 py-1 w-full"
                 type="text"
                 name=""
                 id="usuario"
@@ -32,7 +33,7 @@
               <label class="text-white" for="email">Email</label>
               <input
                 placeholder="ejemplo@gmail.com"
-                class="bg-blue-800/50 rounded px-3 py-1 w-full"
+                class="bg-blue-800/50 rounded outline-none border-2 px-3 py-1 w-full"
                 type="email"
                 name=""
                 id="email"
@@ -41,11 +42,11 @@
           </div>
           <div class="flex gap-7 md:flex-row flex-col">
             <div class="flex flex-col gap-4">
-              <label class="text-white" for="password">Contraseña</label>
+              <label class="text-white " for="password">Contraseña</label>
               <input
                 placeholder="•••••••••••••"
-                class="bg-blue-800/50 rounded px-3 py-1 w-full"
-                type="text"
+                class="bg-blue-800/50 border-2 outline-none rounded px-3 py-1 w-full"
+                type="password"
                 name=""
                 id="password"
               />
@@ -56,8 +57,8 @@
               >
               <input
                 placeholder="•••••••••••••"
-                class="bg-blue-800/50 rounded px-3 py-1 w-full"
-                type="text"
+                class="bg-blue-800/50 border-2 outline-none rounded px-3 py-1 w-full"
+                type="password"
                 name=""
                 id="confirmpass"
               />
@@ -69,7 +70,7 @@
               <label class="text-white" for="telefono">Teléfono</label>
               <input
                 placeholder="ejem 04128922234"
-                class="bg-blue-800/50 rounded px-3 md:w-4/5 w-full py-1"
+                class="bg-blue-800/50 border-2 outline-none rounded px-3 md:w-4/5 w-full py-1"
                 type="text"
                 name=""
                 id="telefono"
@@ -88,6 +89,7 @@
         </form>
       </div>
     </div>
+    <script src="js/index.js"></script>
     <script src="../components/nav.js"></script>
   </body>
 </html>
